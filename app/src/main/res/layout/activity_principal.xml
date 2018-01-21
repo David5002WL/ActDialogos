@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.david.actdialogos.Principal">
+
+        <Button
+            android:id="@+id/botonFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Tria una data"
+            android:textSize="30sp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/botonHora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tria una hora"
+            android:textSize="30sp"
+            android:layout_marginTop="35dp"
+            android:layout_below="@+id/botonFecha"
+            android:layout_alignStart="@+id/botonFecha" />
+
+        <Button
+            android:id="@+id/botonColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="49dp"
+            android:text="Tria un color"
+            android:textSize="30sp"
+            android:layout_below="@+id/botonHora"
+            android:layout_alignStart="@+id/botonFecha"
+            android:layout_alignEnd="@+id/botonHora" />
+
+        <TextView
+            android:id="@+id/textFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DATA :"
+            android:textSize="24sp"
+            android:layout_marginBottom="43dp"
+            android:layout_above="@+id/textHora"
+            android:layout_alignStart="@+id/textHora" />
+
+        <TextView
+            android:id="@+id/editFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_alignBaseline="@+id/textFecha"
+            android:layout_alignBottom="@+id/textFecha"
+            android:layout_alignEnd="@+id/botonFecha" />
+
+        <TextView
+            android:id="@+id/textHora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HORA :"
+            android:textSize="24sp"
+            android:layout_marginBottom="43dp"
+            android:layout_above="@+id/textColor"
+            android:layout_alignEnd="@+id/textColor" />
+
+        <TextView
+            android:id="@+id/editHora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_alignBaseline="@+id/textHora"
+            android:layout_alignBottom="@+id/textHora"
+            android:layout_toEndOf="@+id/textColor" />
+
+        <TextView
+            android:id="@+id/textColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="COLOR :"
+            android:textSize="24sp"
+            android:layout_alignTop="@+id/editColor"
+            android:layout_toStartOf="@+id/editFecha"
+            android:layout_marginEnd="13dp" />
+
+        <TextView
+            android:id="@+id/editColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginBottom="42dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/textColor" />
+    </RelativeLayout>
